@@ -1,9 +1,11 @@
 function pesquisar() {
     let section = document.getElementById("resultados-pesquisa");
+    console.log(section);
 
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
+    console.log(campoPesquisa);
 
-    if (!campoPesquisa == "") {
+    if (!campoPesquisa) {
         section.innerHTML = "<p>Nenhum Superheroi encontrado</p>"
         return
     };
